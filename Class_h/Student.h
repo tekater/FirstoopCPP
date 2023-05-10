@@ -15,5 +15,19 @@ public:
     void init(const char* uname, int* urank);
     void out();
     double Final();
+
+    int GetRank(int index) {
+        return rank[index];
+    }
+    void SetRank(int index, int x) {
+        rank[index] = x;
+    }
+    char* getName() {
+        return name;
+    }
+    void setName(const char* uname) {
+        strcpy_s(name, 20, uname);
+    }
+
 };
 
